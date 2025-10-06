@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Machine Learning Works - ML Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>ML Basics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="what-is-ml.html"><i class="fas fa-question-circle"></i> What is ML</a></li>
+                    <li><a href="types.html"><i class="fas fa-project-diagram"></i> Types of ML</a></li>
+                    <li><a href="how-it-works.html" class="active"><i class="fas fa-cogs"></i> How It Works</a></li>
+                    <li><a href="applications.html"><i class="fas fa-rocket"></i> Applications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>How Machine Learning Works</h1>
+                <p class="page-subtitle">Understanding the systematic process from data to intelligent predictions</p>
+            </div>
+            
+            <section class="content-section">
+                <div class="section-intro">
+                    <p>Machine learning follows a systematic process that transforms raw data into intelligent predictions. Understanding this workflow is crucial for building effective ML systems that can learn from data and make accurate decisions.</p>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Machine Learning Workflow">
+                    <p class="caption">The complete machine learning workflow from data collection to deployment</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>The Machine Learning Workflow</h2>
+                
+                <div class="workflow-overview">
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Collection</h3>
+                        <p>Gathering relevant data from various sources</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3>Data Preparation</h3>
+                        <p>Cleaning and preprocessing raw data</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Data Splitting</h3>
+                        <p>Dividing data for training and evaluation</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Model Selection</h3>
+                        <p>Choosing the right algorithm</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Model Training</h3>
+                        <p>Learning patterns from data</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Model Evaluation</h3>
+                        <p>Assessing performance</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Deployment</h3>
+                        <p>Integrating into production</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Detailed Process Breakdown</h2>
+                
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Data Collection</h3>
+                            <p class="step-description">Gathering relevant data from various sources</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>The first step involves gathering relevant data from various sources. The quality and quantity of data directly impact model performance.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-check"></i> Data Sources</h4>
+                                <ul>
+                                    <li>Databases and data warehouses</li>
+                                    <li>APIs and web services</li>
+                                    <li>Files (CSV, JSON, XML)</li>
+                                    <li>Real-time data streams</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-check"></i> Considerations</h4>
+                                <ul>
+                                    <li>Data relevance to the problem</li>
+                                    <li>Data quality and completeness</li>
+                                    <li>Privacy and ethical concerns</li>
+                                    <li>Data volume requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>Data Preparation and Cleaning</h3>
+                            <p class="step-description">Transforming raw data into usable format</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>Raw data is often messy and requires preprocessing to make it suitable for training. This step ensures data quality and consistency.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-tasks"></i> Common Tasks</h4>
+                                <ul>
+                                    <li>Handling missing values</li>
+                                    <li>Removing duplicates</li>
+                                    <li>Data normalization and scaling</li>
+                                    <li>Encoding categorical variables</li>
+                                    <li>Feature engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Data Splitting</h3>
+                            <p class="step-description">Dividing data for proper evaluation</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>Data is divided into three sets to evaluate model performance properly and prevent overfitting.</p>
+                        <div class="data-split-cards">
+                            <div class="split-card">
+                                <div class="split-percentage">60-80%</div>
+                                <h4>Training Set</h4>
+                                <p>Used to train the model and learn patterns</p>
+                            </div>
+                            <div class="split-card">
+                                <div class="split-percentage">10-20%</div>
+                                <h4>Validation Set</h4>
+                                <p>Used to tune hyperparameters and prevent overfitting</p>
+                            </div>
+                            <div class="split-card">
+                                <div class="split-percentage">10-20%</div>
+                                <h4>Test Set</h4>
+                                <p>Used for final evaluation on unseen data</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3>Model Selection</h3>
+                            <p class="step-description">Choosing the right algorithm</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>Choosing the right algorithm based on the problem type and data characteristics is crucial for success.</p>
+                        <div class="algorithm-cards">
+                            <div class="algorithm-card">
+                                <h4><i class="fas fa-chart-line"></i> Regression</h4>
+                                <ul>
+                                    <li>Linear Regression</li>
+                                    <li>Decision Trees</li>
+                                    <li>Random Forest</li>
+                                    <li>Gradient Boosting</li>
+                                </ul>
+                            </div>
+                            <div class="algorithm-card">
+                                <h4><i class="fas fa-tags"></i> Classification</h4>
+                                <ul>
+                                    <li>Logistic Regression</li>
+                                    <li>Support Vector Machines</li>
+                                    <li>Naive Bayes</li>
+                                    <li>Neural Networks</li>
+                                </ul>
+                            </div>
+                            <div class="algorithm-card">
+                                <h4><i class="fas fa-project-diagram"></i> Clustering</h4>
+                                <ul>
+                                    <li>K-Means</li>
+                                    <li>DBSCAN</li>
+                                    <li>Hierarchical</li>
+                                    <li>Gaussian Mixture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <div>
+                            <h3>Model Training</h3>
+                            <p class="step-description">Learning patterns from data</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>The algorithm learns patterns from the training data by adjusting its parameters through optimization techniques.</p>
+                        <div class="training-details">
+                            <div class="training-concept">
+                                <h4><i class="fas fa-sync-alt"></i> Training Process</h4>
+                                <ul>
+                                    <li>Forward propagation: Making predictions</li>
+                                    <li>Loss calculation: Measuring errors</li>
+                                    <li>Backward propagation: Adjusting parameters</li>
+                                    <li>Iteration: Repeating until convergence</li>
+                                </ul>
+                            </div>
+                            <div class="training-concept">
+                                <h4><i class="fas fa-sliders-h"></i> Key Concepts</h4>
+                                <ul>
+                                    <li><strong>Epochs:</strong> Complete passes through training data</li>
+                                    <li><strong>Batch Size:</strong> Number of samples per update</li>
+                                    <li><strong>Learning Rate:</strong> Step size for parameter updates</li>
+                                    <li><strong>Convergence:</strong> When model stops improving</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">6</div>
+                        <div>
+                            <h3>Model Evaluation</h3>
+                            <p class="step-description">Assessing model performance</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>Assessing the model's performance using the validation and test sets to ensure it generalizes well to new data.</p>
+                        <div class="evaluation-metrics">
+                            <div class="metric-card">
+                                <h4><i class="fas fa-crosshairs"></i> Classification Metrics</h4>
+                                <ul>
+                                    <li>Accuracy</li>
+                                    <li>Precision & Recall</li>
+                                    <li>F1-Score</li>
+                                    <li>ROC-AUC</li>
+                                </ul>
+                            </div>
+                            <div class="metric-card">
+                                <h4><i class="fas fa-chart-bar"></i> Regression Metrics</h4>
+                                <ul>
+                                    <li>Mean Absolute Error</li>
+                                    <li>Mean Squared Error</li>
+                                    <li>R-squared</li>
+                                    <li>Root Mean Squared Error</li>
+                                </ul>
+                            </div>
+                            <div class="metric-card">
+                                <h4><i class="fas fa-chart-pie"></i> Clustering Metrics</h4>
+                                <ul>
+                                    <li>Silhouette Score</li>
+                                    <li>Davies-Bouldin Index</li>
+                                    <li>Calinski-Harabasz Index</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">7</div>
+                        <div>
+                            <h3>Model Deployment</h3>
+                            <p class="step-description">Integrating into production</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p>Integrating the trained model into a production environment to make real predictions and deliver value.</p>
+                        <div class="deployment-options">
+                            <div class="deployment-card">
+                                <h4><i class="fas fa-cloud"></i> Cloud Deployment</h4>
+                                <ul>
+                                    <li>REST APIs</li>
+                                    <li>Serverless functions</li>
+                                    <li>Containerization</li>
+                                    <li>Auto-scaling</li>
+                                </ul>
+                            </div>
+                            <div class="deployment-card">
+                                <h4><i class="fas fa-desktop"></i> Edge Deployment</h4>
+                                <ul>
+                                    <li>Mobile devices</li>
+                                    <li>IoT devices</li>
+                                    <li>Embedded systems</li>
+                                    <li>Real-time processing</li>
+                                </ul>
+                            </div>
+                            <div class="deployment-card">
+                                <h4><i class="fas fa-tools"></i> Maintenance</h4>
+                                <ul>
+                                    <li>Performance monitoring</li>
+                                    <li>Model retraining</li>
+                                    <li>A/B testing</li>
+                                    <li>Version control</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section highlight-section">
+                <h2>Key ML Concepts</h2>
+                <div class="concepts-grid">
+                    <div class="concept-item">
+                        <h3><i class="fas fa-balance-scale"></i> Overfitting vs Underfitting</h3>
+                        <p><strong>Overfitting:</strong> Model learns training data too well but fails on new data</p>
+                        <p><strong>Underfitting:</strong> Model fails to capture patterns in the training data</p>
+                    </div>
+                    <div class="concept-item">
+                        <h3><i class="fas fa-bullseye"></i> Bias-Variance Tradeoff</h3>
+                        <p>Balancing model complexity to achieve optimal performance on both training and unseen data</p>
+                    </div>
+                    <div class="concept-item">
+                        <h3><i class="fas fa-chart-line"></i> Cross-Validation</h3>
+                        <p>Technique for robust model evaluation by rotating training and validation sets</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-steps">
+                <h2>Ready to See ML in Action?</h2>
+                <p>Now that you understand how machine learning works, explore real-world applications:</p>
+                <div class="step-buttons">
+                    <a href="applications.html" class="btn btn-primary">
+                        <span>Explore Applications</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="types.html" class="btn btn-secondary">
+                        <span>Review ML Types</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                        <h2>ML Basics</h2>
+                    </div>
+                    <p>A comprehensive educational resource for understanding machine learning fundamentals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="what-is-ml.html">What is ML</a></li>
+                        <li><a href="types.html">Types of ML</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">ML Glossary</a></li>
+                        <li><a href="#">Practice Exercises</a></li>
+                        <li><a href="#">Further Reading</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Machine Learning Basics. A personal project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

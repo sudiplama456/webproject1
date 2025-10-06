@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Machine Learning - ML Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>ML Basics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="what-is-ml.html"><i class="fas fa-question-circle"></i> What is ML</a></li>
+                    <li><a href="types.html" class="active"><i class="fas fa-project-diagram"></i> Types of ML</a></li>
+                    <li><a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a></li>
+                    <li><a href="applications.html"><i class="fas fa-rocket"></i> Applications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Types of Machine Learning</h1>
+                <p class="page-subtitle">Understanding the different approaches to machine learning</p>
+            </div>
+
+            <section class="content-section">
+                <div class="section-intro">
+                    <p>Machine learning can be broadly categorized into three main types based on the learning approach and the nature of the data used for training. Each type serves different purposes and is suited for specific kinds of problems.</p>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=400&fit=crop" alt="Types of Machine Learning">
+                    <p class="caption">The three main types of machine learning: Supervised, Unsupervised, and Reinforcement Learning</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Machine Learning Approaches</h2>
+                
+                <div class="ml-types-overview">
+                    <div class="type-preview">
+                        <div class="type-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Supervised Learning</h3>
+                        <p>Learning with labeled data and known outcomes</p>
+                    </div>
+                    
+                    <div class="type-preview">
+                        <div class="type-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Unsupervised Learning</h3>
+                        <p>Finding patterns in unlabeled data</p>
+                    </div>
+                    
+                    <div class="type-preview">
+                        <div class="type-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Reinforcement Learning</h3>
+                        <p>Learning through trial and error with rewards</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section type-section">
+                <div class="type-header">
+                    <div class="type-number">1</div>
+                    <div>
+                        <h2>Supervised Learning</h2>
+                        <p class="type-description">Learning from labeled training data to make predictions</p>
+                    </div>
+                </div>
+                
+                <div class="type-content">
+                    <div class="type-explanation">
+                        <p>Supervised learning involves training a model on labeled data, where both input data and corresponding output labels are provided. The algorithm learns to map inputs to outputs based on example input-output pairs.</p>
+                    </div>
+                    
+                    <div class="type-details">
+                        <div class="detail-card">
+                            <h3><i class="fas fa-cog"></i> How it works</h3>
+                            <ul>
+                                <li>The algorithm learns from labeled training data</li>
+                                <li>It makes predictions based on patterns learned</li>
+                                <li>The model's performance is evaluated against known outputs</li>
+                                <li>Models are trained until they achieve desired accuracy</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h3><i class="fas fa-code"></i> Common Algorithms</h3>
+                            <ul>
+                                <li><strong>Linear Regression:</strong> For predicting continuous values</li>
+                                <li><strong>Logistic Regression:</strong> For classification problems</li>
+                                <li><strong>Decision Trees:</strong> For both classification and regression</li>
+                                <li><strong>Support Vector Machines (SVM):</strong> For classification tasks</li>
+                                <li><strong>Random Forests:</strong> Ensemble method using multiple trees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="type-examples">
+                        <h3><i class="fas fa-lightbulb"></i> Real-World Examples</h3>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email Spam Detection</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-home"></i>
+                                <span>House Price Prediction</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-diagnoses"></i>
+                                <span>Medical Diagnosis</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Fraud Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section type-section">
+                <div class="type-header">
+                    <div class="type-number">2</div>
+                    <div>
+                        <h2>Unsupervised Learning</h2>
+                        <p class="type-description">Discovering hidden patterns in unlabeled data</p>
+                    </div>
+                </div>
+                
+                <div class="type-content">
+                    <div class="type-explanation">
+                        <p>Unsupervised learning deals with unlabeled data, where the algorithm tries to find patterns and relationships without explicit guidance. The system learns the inherent structure from the data without predefined labels.</p>
+                    </div>
+                    
+                    <div class="type-details">
+                        <div class="detail-card">
+                            <h3><i class="fas fa-cog"></i> How it works</h3>
+                            <ul>
+                                <li>The algorithm identifies hidden patterns in data</li>
+                                <li>No predefined labels are provided</li>
+                                <li>The model organizes data based on similarities</li>
+                                <li>Discover structure and relationships autonomously</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h3><i class="fas fa-code"></i> Common Algorithms</h3>
+                            <ul>
+                                <li><strong>K-Means Clustering:</strong> Groups similar data points</li>
+                                <li><strong>Principal Component Analysis (PCA):</strong> Reduces data dimensionality</li>
+                                <li><strong>Apriori Algorithm:</strong> For association rule learning</li>
+                                <li><strong>DBSCAN:</strong> Density-based spatial clustering</li>
+                                <li><strong>Autoencoders:</strong> Neural networks for representation learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="type-examples">
+                        <h3><i class="fas fa-lightbulb"></i> Real-World Examples</h3>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <i class="fas fa-users"></i>
+                                <span>Customer Segmentation</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>Market Basket Analysis</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Data Visualization</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Anomaly Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section type-section">
+                <div class="type-header">
+                    <div class="type-number">3</div>
+                    <div>
+                        <h2>Reinforcement Learning</h2>
+                        <p class="type-description">Learning through interaction and feedback</p>
+                    </div>
+                </div>
+                
+                <div class="type-content">
+                    <div class="type-explanation">
+                        <p>Reinforcement learning involves an agent that learns to make decisions by interacting with an environment and receiving rewards or penalties. The agent learns optimal strategies through trial and error to maximize cumulative rewards.</p>
+                    </div>
+                    
+                    <div class="type-details">
+                        <div class="detail-card">
+                            <h3><i class="fas fa-cog"></i> How it works</h3>
+                            <ul>
+                                <li>Agent takes actions in an environment</li>
+                                <li>Receives rewards or penalties based on actions</li>
+                                <li>Learns optimal strategies through trial and error</li>
+                                <li>Balances exploration and exploitation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h3><i class="fas fa-code"></i> Common Algorithms</h3>
+                            <ul>
+                                <li><strong>Q-Learning:</strong> Model-free reinforcement learning</li>
+                                <li><strong>Deep Q-Network (DQN):</strong> Combines Q-learning with deep neural networks</li>
+                                <li><strong>Policy Gradients:</strong> Directly learns the policy function</li>
+                                <li><strong>Actor-Critic Methods:</strong> Combines value and policy-based approaches</li>
+                                <li><strong>Monte Carlo Methods:</strong> Learning from complete episodes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="type-examples">
+                        <h3><i class="fas fa-lightbulb"></i> Real-World Examples</h3>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Game Playing AI</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-car"></i>
+                                <span>Self-Driving Cars</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-industry"></i>
+                                <span>Robotics Control</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Trading Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section highlight-section">
+                <h2>Quick Comparison</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Data Used</th>
+                                <th>Learning Approach</th>
+                                <th>Common Applications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Supervised</strong></td>
+                                <td>Labeled Data</td>
+                                <td>Learning from examples</td>
+                                <td>Classification, Regression</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Unsupervised</strong></td>
+                                <td>Unlabeled Data</td>
+                                <td>Finding patterns</td>
+                                <td>Clustering, Dimensionality Reduction</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reinforcement</strong></td>
+                                <td>Interaction Data</td>
+                                <td>Trial and Error</td>
+                                <td>Game AI, Robotics, Control Systems</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="next-steps">
+                <h2>Ready to Learn More?</h2>
+                <p>Now that you understand the different types of machine learning, explore how they work in practice:</p>
+                <div class="step-buttons">
+                    <a href="how-it-works.html" class="btn btn-primary">
+                        <span>How ML Works</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="applications.html" class="btn btn-secondary">
+                        <span>See Applications</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                        <h2>ML Basics</h2>
+                    </div>
+                    <p>A comprehensive educational resource for understanding machine learning fundamentals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="what-is-ml.html">What is ML</a></li>
+                        <li><a href="types.html">Types of ML</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">ML Glossary</a></li>
+                        <li><a href="#">Practice Exercises</a></li>
+                        <li><a href="#">Further Reading</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Machine Learning Basics. A personal project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
